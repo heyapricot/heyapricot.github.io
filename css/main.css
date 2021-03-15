@@ -10,3 +10,15 @@ main {
 #social-icons a {
   color: #cfcfcf;
 }
+
+#greeting {
+  color: #f55800;
+}
+
+#job-title {
+  color: white;
+}
+
+#introduction {
+  color: lightgray;
+}
