@@ -122,7 +122,9 @@
                 <span class="btn btn-outline-dark">ruby</span>
               </p>
               <p>
-                <a href="#" class="btn btn-danger">See Project</a>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#projectShowcaseModal">
+                  See Project
+                </button>
               </p>
             </div>
           </div>
@@ -271,6 +273,47 @@
           </div>
           <div class="w-100 d-lg-none">
             <a href="#" class="btn btn-danger w-100 rounded-0">See Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="projectShowcaseModal" tabindex="-1" aria-labelledby="projectShowcaseModal" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0">
+            <div class="container-fluid px-0">
+              <div class="row mb-3">
+                <div class="col d-flex">
+                  <h5 class="modal-title">Multi Post Stories</h5>
+                  <button type="button" class="btn-close align-self-center" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <span class="btn btn-outline-secondary">html</span>
+                  <span class="btn btn-outline-secondary">bootstrap</span>
+                  <span class="btn btn-outline-secondary">ruby</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-8">
+                  <img src="assets/images/modal_pic.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-4 d-flex flex-column justify-content-between">
+                  <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac placerat vestibulum lectus mauris ultrices eros in. Pellentesque dignissim enim sit amet venenatis urna. Sit amet est placerat in egestas erat imperdiet sed euismod.
+                  </div>
+                  <div>
+                    <a href="#" class="btn btn-danger">See Live</a>
+                    <a href="#" class="btn btn-danger">See Source</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
