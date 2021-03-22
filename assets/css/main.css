@@ -83,7 +83,7 @@ nav {
 }
 
 @media (max-width: 992px) {
-  .skills, .skills div {
+  .form-submit, .skills, .skills div {
     text-align: center;
   }
 }
