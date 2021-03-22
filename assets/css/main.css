@@ -7,8 +7,16 @@ nav {
   background-color: #3e3c3c;
 }
 
-#greeting {
+#about {
+  background-color: #1c1a19;
+}
+
+#about .description h1 {
   color: #f55800;
+}
+
+#about .description p {
+  color: lightgray;
 }
 
 #introduction {
@@ -17,6 +25,14 @@ nav {
 
 #job-title {
   color: white;
+}
+
+.bullet {
+  color: #f55800;
+}
+
+.heading {
+  color: #f55800;
 }
 
 .project-link-container {
@@ -30,6 +46,14 @@ nav {
 .showcase-body {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, black 100%);
   height: auto;
+}
+
+.skills {
+  color: white;
+}
+
+.skills ul li {
+  padding-bottom: 1rem;
 }
 
 .social-icons a {
@@ -55,5 +79,11 @@ nav {
   .showcase-card:hover .project-link-container {
     opacity: 1;
     top: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  .skills, .skills div {
+    text-align: center;
   }
 }
