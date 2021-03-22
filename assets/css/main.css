@@ -1,6 +1,6 @@
 main {
   height: 100vh;
-  background-color: #1c1a19;
+  background-color: #000020;
 }
 
 nav {
@@ -20,11 +20,16 @@ nav {
 }
 
 #introduction {
-  color: lightgray;
+  color: white;
 }
 
 #job-title {
-  color: white;
+  color: #008ec0;
+}
+
+#main-illustration {
+  background: url("../images/header_illustration.svg");
+  background-size: cover;
 }
 
 .bullet {
@@ -32,7 +37,7 @@ nav {
 }
 
 .heading {
-  color: #f55800;
+  color: #f70e4d;
 }
 
 .project-link-container {
@@ -57,7 +62,7 @@ nav {
 }
 
 .social-icons a {
-  color: #cfcfcf;
+  color: #008ec0;
 }
 
 @media (min-width: 992px) {
