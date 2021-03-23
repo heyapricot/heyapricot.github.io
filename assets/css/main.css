@@ -32,6 +32,11 @@ nav {
   background-size: cover;
 }
 
+#showcase {
+  background: #000020;
+  color: white;
+}
+
 .bullet {
   color: #f55800;
 }
@@ -46,6 +51,47 @@ nav {
   position: absolute;
   top: 100%;
   transition: 1.5s ease;
+}
+
+.project-modal-trigger {
+  background-color: #f70e4d;
+  border-color: #f70e4d;
+  color: white;
+}
+
+.project-modal-trigger:active {
+  background-color: #5c031e;
+  border-color: #5c031e;
+  color: white;
+  box-shadow: 0 0 0 .25rem rgba(247,14,77,.5);
+}
+
+.project-modal-trigger:focus {
+  box-shadow: 0 0 0 .25rem rgba(247,14,77,.5);
+}
+
+.project-modal-trigger:hover {
+  background-color: #5c031e;
+  border-color: #5c031e;
+  color: white;
+}
+
+.project-skills-showcase-outline {
+  border-color: #008ec0;
+  color: #008ec0;
+}
+
+.project-skills-showcase, .project-skills-showcase-outline:hover {
+  background-color: #008ec0;
+  border-color: #008ec0;
+  color: white;
+}
+
+.project-skills-showcase:hover {
+  background-color: #008ec0;
+  border-color: #008ec0;
+  color: white;
+  cursor: default;
 }
 
 .showcase-body {
