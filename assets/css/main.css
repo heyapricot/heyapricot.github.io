@@ -45,6 +45,10 @@ nav {
   color: #f70e4d;
 }
 
+.modal-showcase {
+  background-color: #180c45;
+}
+
 .project-link-container {
   height: 10%;
   opacity: 0;
