@@ -8,11 +8,11 @@ nav {
 }
 
 #about {
-  background-color: #1c1a19;
+  background-color: #000020;
 }
 
 #about .description h1 {
-  color: #f55800;
+  color: #f70e4d;
 }
 
 #about .description p {
@@ -38,7 +38,7 @@ nav {
 }
 
 .bullet {
-  color: #f55800;
+  color: #f70e4d;
 }
 
 .heading {
