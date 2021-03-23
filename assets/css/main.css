@@ -1,13 +1,12 @@
 main {
   height: 100vh;
-  background-color: #000020;
 }
 
 nav {
   background-color: #012b4b;
 }
 
-#about {
+main, #about, #contact, #showcase, #social-bottom {
   background-color: #000020;
 }
 
@@ -17,6 +16,10 @@ nav {
 
 #about .description p {
   color: lightgray;
+}
+
+#contact-form div input, #contact-form div textarea {
+  background-color: #000020;
 }
 
 #introduction {
@@ -33,7 +36,6 @@ nav {
 }
 
 #showcase {
-  background: #000020;
   color: white;
 }
 
