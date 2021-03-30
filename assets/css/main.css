@@ -6,6 +6,7 @@ nav {
   background-color: #008ec0;
 }
 
+body,
 main,
 #about,
 #contact,
@@ -29,10 +30,6 @@ main,
 
 #introduction {
   color: white;
-}
-
-#job-title {
-  color: #008ec0;
 }
 
 #main-illustration {
