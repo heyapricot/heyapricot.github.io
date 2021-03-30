@@ -6,7 +6,11 @@ nav {
   background-color: #012b4b;
 }
 
-main, #about, #contact, #showcase, #social-bottom {
+main,
+#about,
+#contact,
+#showcase,
+#social-bottom {
   background-color: #000020;
 }
 
@@ -18,7 +22,8 @@ main, #about, #contact, #showcase, #social-bottom {
   color: lightgray;
 }
 
-#contact-form div input, #contact-form div textarea {
+#contact-form div input,
+#contact-form div textarea {
   background-color: #000020;
 }
 
@@ -69,11 +74,11 @@ main, #about, #contact, #showcase, #social-bottom {
   background-color: #5c031e;
   border-color: #5c031e;
   color: white;
-  box-shadow: 0 0 0 .25rem rgba(247,14,77,.5);
+  box-shadow: 0 0 0 0.25rem rgba(247, 14, 77, 0.5);
 }
 
 .project-modal-trigger:focus {
-  box-shadow: 0 0 0 .25rem rgba(247,14,77,.5);
+  box-shadow: 0 0 0 0.25rem rgba(247, 14, 77, 0.5);
 }
 
 .project-modal-trigger:hover {
@@ -87,7 +92,8 @@ main, #about, #contact, #showcase, #social-bottom {
   color: #008ec0;
 }
 
-.project-skills-showcase, .project-skills-showcase-outline:hover {
+.project-skills-showcase,
+.project-skills-showcase-outline:hover {
   background-color: #008ec0;
   border-color: #008ec0;
   color: white;
@@ -101,7 +107,11 @@ main, #about, #contact, #showcase, #social-bottom {
 }
 
 .showcase-body {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, black 100%);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0,
+    black 100%
+  );
   height: auto;
 }
 
@@ -115,6 +125,12 @@ main, #about, #contact, #showcase, #social-bottom {
 
 .social-icons a {
   color: #008ec0;
+}
+
+@media (max-width: 576px) {
+  .showcase-card {
+    max-height: 320px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -140,7 +156,9 @@ main, #about, #contact, #showcase, #social-bottom {
 }
 
 @media (max-width: 992px) {
-  .form-submit, .skills, .skills div {
+  .form-submit,
+  .skills,
+  .skills div {
     text-align: center;
   }
 }
