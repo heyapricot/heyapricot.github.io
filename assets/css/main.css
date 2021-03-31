@@ -11,7 +11,8 @@ main,
 #about,
 #contact,
 #showcase,
-#social-bottom {
+#social-bottom,
+.modal-showcase {
   background-color: #000020;
 }
 
@@ -47,10 +48,6 @@ main,
 
 .heading {
   color: #f70e4d;
-}
-
-.modal-showcase {
-  background-color: #180c45;
 }
 
 .overlay {

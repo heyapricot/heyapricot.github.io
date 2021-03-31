@@ -47,11 +47,14 @@ const showcaseModalData = {
 
 const textToBadgeNodes = (textArry, classNames) => {
   return textArry.map((label) => {
+    const column = document.createElement("div");
     const node = document.createElement("span");
+    column.setAttribute("class", "col-auto");
     node.setAttribute("class", classNames.join(" "));
     const caption = document.createTextNode(label);
     node.appendChild(caption);
-    return node;
+    column.appendChild(node);
+    return column;
   });
 };
 
