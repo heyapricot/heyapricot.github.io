@@ -2,26 +2,50 @@
   "battleshipJS": {
     "title": "Battleship.js",
     "path": "assets/images/battleship.gif",
-    "tags": ["html", "css", "bootstrap", "javascript", "webpacker"],
+    "tags": ["html", "css", "bootstrap", "javascript", "webpack"],
     "description": "Implementation of the classic Battleship game with a minimalist colorful interface. Built with plain Javascript.",
-    "live": "https://heyapricot.github.io/battleship.js",
-    "repo": "https://github.com/heyapricot/battleship.js"
+    "links": [
+      {
+        "caption": "Live",
+        "link": "https://alvarosanchez.dev/battleship.js"
+      },
+      {
+        "caption": "Source",
+        "link": "https://github.com/heyapricot/battleship.js"
+      }
+    ]
   },
   "ticTacToeJS": {
     "title": "TicTacToe.js",
     "path": "assets/images/tic_tac_toe.gif",
-    "tags": ["html", "css", "bootstrap", "javascript", "webpacker"],
+    "tags": ["html", "css", "bootstrap", "javascript", "webpack"],
     "description": "A minimalist version of Tic Tac Toe with a dark mode interface. Built with plain Javascript and Bootstrap.",
-    "live": "https://heyapricot.github.io/tictactoe.js/",
-    "repo": "https://github.com/heyapricot/tictactoe.js"
+    "links": [
+      {
+        "caption": "Live",
+        "link": "https://alvarosanchez.dev/tictactoe.js/"
+      },
+      {
+        "caption": "Source",
+        "link": "https://github.com/heyapricot/tictactoe.js"
+      }
+    ]
   },
   "toDoJS": {
     "title": "ToDo.js",
     "path": "assets/images/to_do.gif",
-    "tags": ["html", "css", "bootstrap", "javascript", "webpacker"],
+    "tags": ["html", "css", "bootstrap", "javascript", "webpack"],
     "description": "Mobile-first To-Do list web application with a dark and minimalist interface built using plain Javascript and Bootstrap.",
-    "live": "https://heyapricot.github.io/ToDo.js/",
-    "repo": "https://github.com/heyapricot/ToDo.js"
+    "links": [
+      {
+        "caption": "Live",
+        "link": "https://alvarosanchez.dev/ToDo.js/"
+      },
+      {
+        "caption": "Source",
+        "link": "https://github.com/heyapricot/ToDo.js"
+      }
+    ]
   },
   "weatherJS": {
     "title": "Weather.js",
@@ -31,12 +55,20 @@
       "css",
       "bootstrap",
       "javascript",
-      "webpacker",
+      "webpack",
       "api",
       "openweather"
     ],
     "description": "Interface for the OpenWeather API. Write the name of the city to get the current temperature. Allows display in Celsius or Fahrenheit. The thermometer icon changes according to how hot the current temperature is. Built with Javascript and Bootstrap.",
-    "live": "https://heyapricot.github.io/weather.js/",
-    "repo": "https://github.com/heyapricot/weather.js"
+    "links": [
+      {
+        "caption": "Live",
+        "link": "https://alvarosanchez.dev/weather.js/"
+      },
+      {
+        "caption": "Source",
+        "link": "https://github.com/heyapricot/weather.js"
+      }
+    ]
   }
 }
