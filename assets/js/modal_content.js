@@ -1,48 +1,13 @@
-const showcaseModalData = {
-  battleshipJS: {
-    title: "Battleship.js",
-    path: "assets/images/battleship.gif",
-    tags: ["html", "css", "bootstrap", "javascript", "webpacker"],
-    description:
-      "Implementation of the classic Battleship game with a minimalist colorful interface. Built with plain Javascript.",
-    live: "https://heyapricot.github.io/battleship.js",
-    repo: "https://github.com/heyapricot/battleship.js",
-  },
-  ticTacToeJS: {
-    title: "TicTacToe.js",
-    path: "assets/images/tic_tac_toe.gif",
-    tags: ["html", "css", "bootstrap", "javascript", "webpacker"],
-    description:
-      "A minimalist version of Tic Tac Toe with a dark mode interface. Built with plain Javascript and Bootstrap.",
-    live: "https://heyapricot.github.io/tictactoe.js/",
-    repo: "https://github.com/heyapricot/tictactoe.js",
-  },
-  toDoJS: {
-    title: "ToDo.js",
-    path: "assets/images/to_do.gif",
-    tags: ["html", "css", "bootstrap", "javascript", "webpacker"],
-    description:
-      "Mobile-first To-Do list web application with a dark and minimalist interface built using plain Javascript and Bootstrap.",
-    live: "https://heyapricot.github.io/ToDo.js/",
-    repo: "https://github.com/heyapricot/ToDo.js",
-  },
-  weatherJS: {
-    title: "Weather.js",
-    path: "assets/images/weather.gif",
-    tags: [
-      "html",
-      "css",
-      "bootstrap",
-      "javascript",
-      "webpacker",
-      "api",
-      "openweather",
-    ],
-    description:
-      "Interface for the OpenWeather API. Write the name of the city to get the current temperature. Allows display in Celsius or Fahrenheit. The thermometer icon changes according to how hot the current temperature is. Built with Javascript and Bootstrap.",
-    live: "https://heyapricot.github.io/weather.js/",
-    repo: "https://github.com/heyapricot/weather.js",
-  },
+const getShowcaseModalData = async function () {
+  try {
+    const request = "https://alvarosanchez.dev/data/projects.json";
+    const response = await fetch(request, { mode: "cors" });
+    if (response.ok) {
+      return await response.json();
+    }
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 const textToBadgeNodes = (textArry, classNames) => {
@@ -79,18 +44,28 @@ projectShowcaseModal.addEventListener("show.bs.modal", function (event) {
     ".skill-badges-container"
   );
 
+  getShowcaseModalData().then((data) => {
+    if (typeof data === "undefined") {
+      alert(
+        "Could not grab the project data. Please verify your connection and try again"
+      );
+    } else {
+      let showcaseModalData = { ...data }[key];
+      modalTitle.textContent = showcaseModalData["title"];
+      modalScreenshot.src = showcaseModalData["path"];
+      modalLive.href = showcaseModalData["live"];
+      modalRepo.href = showcaseModalData["repo"];
+      projectDescription.textContent = showcaseModalData["description"];
+      appendNodes(
+        badgesContainer,
+        textToBadgeNodes(showcaseModalData["tags"], [
+          "btn",
+          "project-skills-showcase",
+          "me-1",
+        ])
+      );
+    }
+  });
+
   badgesContainer.innerHTML = "";
-  modalTitle.textContent = showcaseModalData[key]["title"];
-  modalScreenshot.src = showcaseModalData[key]["path"];
-  modalLive.href = showcaseModalData[key]["live"];
-  modalRepo.href = showcaseModalData[key]["repo"];
-  projectDescription.textContent = showcaseModalData[key]["description"];
-  appendNodes(
-    badgesContainer,
-    textToBadgeNodes(showcaseModalData[key]["tags"], [
-      "btn",
-      "project-skills-showcase",
-      "me-1",
-    ])
-  );
 });
