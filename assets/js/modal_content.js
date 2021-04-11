@@ -10,6 +10,21 @@ const getShowcaseModalData = async function () {
   }
 };
 
+const linkNodes = (dataArray, classNames) => {
+  return dataArray.map((dataObj) => {
+    const column = document.createElement("div");
+    const node = document.createElement("a");
+    column.setAttribute("class", "col-auto");
+    node.setAttribute("class", classNames.join(" "));
+    const caption = document.createTextNode(dataObj["caption"]);
+    node.target = "_blank";
+    node.href = dataObj["link"];
+    node.appendChild(caption);
+    column.appendChild(node);
+    return column;
+  });
+};
+
 const textToBadgeNodes = (textArry, classNames) => {
   return textArry.map((label) => {
     const column = document.createElement("div");
@@ -35,14 +50,13 @@ projectShowcaseModal.addEventListener("show.bs.modal", function (event) {
   let modalScreenshot = projectShowcaseModal.querySelector(
     ".project-screenshot"
   );
-  let modalLive = projectShowcaseModal.querySelector(".modal-live");
-  let modalRepo = projectShowcaseModal.querySelector(".modal-repo");
   let projectDescription = projectShowcaseModal.querySelector(
     ".project-description"
   );
   let badgesContainer = projectShowcaseModal.querySelector(
     ".skill-badges-container"
   );
+  let linksContainer = projectShowcaseModal.querySelector(".links-container");
 
   getShowcaseModalData().then((data) => {
     if (typeof data === "undefined") {
@@ -53,8 +67,6 @@ projectShowcaseModal.addEventListener("show.bs.modal", function (event) {
       let showcaseModalData = { ...data }[key];
       modalTitle.textContent = showcaseModalData["title"];
       modalScreenshot.src = showcaseModalData["path"];
-      modalLive.href = showcaseModalData["live"];
-      modalRepo.href = showcaseModalData["repo"];
       projectDescription.textContent = showcaseModalData["description"];
       appendNodes(
         badgesContainer,
@@ -64,8 +76,17 @@ projectShowcaseModal.addEventListener("show.bs.modal", function (event) {
           "me-1",
         ])
       );
+      appendNodes(
+        linksContainer,
+        linkNodes(showcaseModalData["links"], [
+          "btn",
+          "project-modal-trigger",
+          "modal-repo",
+        ])
+      );
     }
   });
 
   badgesContainer.innerHTML = "";
+  linksContainer.innerHTML = "";
 });
