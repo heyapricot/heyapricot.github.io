@@ -1,4 +1,25 @@
 {
+  "chronicle": {
+    "title": "Chronicle",
+    "path": "assets/images/chronicle.gif",
+    "tags": [
+      "ruby",
+      "ruby on rails",
+      "postgresql",
+      "html",
+      "css",
+      "bootstrap",
+      "authentication",
+      "file upload"
+    ],
+    "description": "This social network features authentication (sign-up and login), uploading an avatar, creating posts, liking and commenting on them as well as sending friendship requests and displaying your friends' posts in a timeline.",
+    "links": [
+      {
+        "caption": "Source",
+        "link": "https://github.com/heyapricot/social-network-rails"
+      }
+    ]
+  },
   "battleshipJS": {
     "title": "Battleship.js",
     "path": "assets/images/battleship.gif",
