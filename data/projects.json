@@ -15,6 +15,32 @@
       }
     ]
   },
+  "microverse": {
+    "title": "Microverse",
+    "path": "assets/images/microverse.gif",
+    "tags": [
+      "ruby on rails",
+      "javascript",
+      "heroku",
+      "rspec",
+      "capybara",
+      "semaphore",
+      "html",
+      "css",
+      "bootstrap"
+    ],
+    "description": "This web application helps students succeed in the program by defining a schedule and letting them keep track of the projects they have submitted and the remaining ones. Other features include request code reviews, keep assistance and generate group meetings automatically.",
+    "links": [
+      {
+        "caption": "About",
+        "link": "https://www.microverse.org/about-us"
+      },
+      {
+        "caption": "Microverse & Me",
+        "link": "https://www.microverse.org/blog/from-microverse-student-to-team-member-how-alvaro-did-it"
+      }
+    ]
+  },
   "ticTacToeJS": {
     "title": "TicTacToe.js",
     "path": "assets/images/tic_tac_toe.gif",
