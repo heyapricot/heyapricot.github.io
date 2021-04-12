@@ -133,7 +133,8 @@ main,
 }
 
 @media (min-width: 992px) {
-  .showcase-card {
+  .showcase-card,
+  .showcase-card img {
     /* Need to assign a max-height for the transition to work. The value will be defined by the img height */
     max-height: 435px;
   }
